@@ -24,4 +24,8 @@ public class ConsumerController {
     public  CommonResult<Payment> getPaymentById(@PathVariable("id") Long id){
         return  paymentFeignService.getPaymentById(id);
     }
+    @GetMapping("/consumer/payment/time")
+     public  String paymentTime(){
+        return  paymentFeignService.paymentTime();
+    }
 }

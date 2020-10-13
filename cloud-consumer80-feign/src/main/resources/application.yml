@@ -15,3 +15,12 @@ eureka:
   instance:
     instance-id: consumer
     prefer-ip-address: true
+
+# openFeign 默认的是 等待1秒就报错 我们要配置 超时时间即可
+ribbon:
+  ReadTimeout: 5000
+  connectTimeout: 5000
+logging:
+  level:
+    org.example.consumerFeign.service.PaymentFeignService: debug
+

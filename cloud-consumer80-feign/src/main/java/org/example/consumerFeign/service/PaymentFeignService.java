@@ -1,6 +1,4 @@
 package org.example.consumerFeign.service;
-
-import feign.Param;
 import org.example.api.entities.CommonResult;
 import org.example.api.entities.Payment;
 import org.springframework.cloud.openfeign.FeignClient;
