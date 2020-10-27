@@ -23,4 +23,7 @@ ribbon:
 logging:
   level:
     org.example.consumerFeign.service.PaymentFeignService: debug
+feign:
+  hystrix:
+    enabled: true
 
