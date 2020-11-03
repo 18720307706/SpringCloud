@@ -12,6 +12,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.example</groupId>
             <artifactId>cloud-api</artifactId>
             <version>${project.version}</version>

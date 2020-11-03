@@ -1,0 +1,32 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true #开启从注册中心动态创建路由的功能
+      routes:
+        - id: payment_routh
+          uri: lb://cloud-payment
+          predicates:
+            - Path=/payment/get/**
+        - id: payment_routh2
+          uri: lb://cloud-payment
+          predicates:
+            - Path=/payment/lb/**
+#            - After=2020-10-29T14:31:24.146+08:00[Asia/Shanghai] #在这个时间之后启动这个路径  还有许多时间需要断言
+#            - Cookie=username,zzy #访问携带Cookie 还有需要断言匹配 有9种
+eureka:
+  instance:
+    hostname: cloud-gateway-service
+  client:
+    #false表示不向注册中心注册自己
+    register-with-eureka: true
+    #false表示自己端就是注册中心
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/
