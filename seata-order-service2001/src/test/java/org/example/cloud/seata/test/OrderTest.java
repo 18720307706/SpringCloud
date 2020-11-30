@@ -18,7 +18,10 @@ public class OrderTest {
     private UserMapper userMapper;
     @Test
     void  order(){
-        List<User> users=userMapper.selectList(null);
-        users.forEach(System.out::println);
+//        List<User> users=userMapper.selectList(null);
+//        users.forEach(System.out::println);
+        Integer i=1;
+        Integer s =1;
+        System.out.println(i.equals(s));
     }
 }

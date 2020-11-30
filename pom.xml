@@ -32,6 +32,7 @@
       <module>seata-storage-service</module>
       <module>seata-account-service</module>
       <module>mybatis-plus</module>
+      <module>algorithm</module>
   </modules>
   <packaging>pom</packaging>
   <name>Maven</name>
