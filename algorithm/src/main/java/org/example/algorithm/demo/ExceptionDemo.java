@@ -1,4 +1,4 @@
-package org.example.algorithm;
+package org.example.algorithm.demo;
 
 /**
  * 异常测试

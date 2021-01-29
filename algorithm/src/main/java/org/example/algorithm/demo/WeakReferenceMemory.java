@@ -1,4 +1,4 @@
-package org.example.algorithm;
+package org.example.algorithm.demo;
 
 import javax.sound.midi.Soundbank;
 import java.lang.ref.WeakReference;

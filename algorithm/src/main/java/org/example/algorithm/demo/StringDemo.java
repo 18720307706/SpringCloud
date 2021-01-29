@@ -1,4 +1,4 @@
-package org.example.algorithm;
+package org.example.algorithm.demo;
 
 /**
  * @author Lch on 2020/11/27

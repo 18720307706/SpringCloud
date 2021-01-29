@@ -1,4 +1,4 @@
-package org.example.algorithm;
+package org.example.algorithm.demo;
 
 import java.io.IOException;
 import java.lang.ref.Reference;
